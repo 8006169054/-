@@ -2,7 +2,11 @@
 - sudo yum install nginx
 # 버전
 - nginx -v
-
+# 설정변경
+- sudo vi /etc/nginx/nginx.conf
+- root         /usr/share/nginx/html; 주석처리 후 원한는 경로 추가
+- error_page /error.html 변경 index.html
+- location = /error.html { } 변경 index.html
 
 #  등록, 실행, 중지를
  - sudo systemctl enable nginx

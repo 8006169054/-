@@ -5,8 +5,10 @@
 # 설정변경
 - sudo vi /etc/nginx/nginx.conf
 - root         /usr/share/nginx/html; 주석처리 후 원한는 경로 추가
+- root 경로 변경 후 chmod 755 /home/ec2-user << 권한을 줘야함
 - error_page /error.html 변경 index.html
 - location = /error.html { } 변경 index.html
+
 
 #  등록, 실행, 중지를
  - sudo systemctl enable nginx

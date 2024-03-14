@@ -9,6 +9,9 @@ sudo docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=qwer1234! -d -
 리턴 데이터
 dad68d9a80b835a77d8cf668db3052c6bdce2c649dc0ec3752b8a5fedc3bd475
 
+# postgres 계정
+ - postgres / qwer1234!
+
 # postgres 접속
 sudo docker exec -it postgres /bin/bash
 - psql -U postgres 명령어
